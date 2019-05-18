@@ -15,5 +15,12 @@
 <body>
     <h1>Hello Spring MVC</h1>
     <h3>Server time ${serverTime}</h3>
+
+    <form action="user" method="post">
+
+        <input type="text" name="userName"/> <br/>
+        <input type="submit" value="Login">
+
+    </form>
 </body>
 </html>
