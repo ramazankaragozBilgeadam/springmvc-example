@@ -12,6 +12,9 @@
     <!--Spring annotationları ile işaretlenmiş sınıfları bulmak için kullanıyoruz. -->
     <context:component-scan base-package="com.bilgeadam.example"/>
 
+    <!-- @Service @Component @Repository gibi annotationları aktif etmek için kullanıyoruz -->
+    <context:annotation-config />
+
 
     <!-- Oluşturduğum JSP sayfalarının spring
     tarafından çözümlenmesi(Görüntülenmesi) için oluşturuyorum
