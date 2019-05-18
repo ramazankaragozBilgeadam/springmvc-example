@@ -13,7 +13,6 @@ import java.util.Date;
 @Controller
 public class HomeController {
 
-
     /*@Autowired
     private UserService userService;*/
 
@@ -45,6 +44,8 @@ public class HomeController {
         System.out.println("User Name: "+user.getUserName());
 
         model.addAttribute("userName",user.getUserName());
+
+        userService.kaydet(user);
 
         return "user";
     }

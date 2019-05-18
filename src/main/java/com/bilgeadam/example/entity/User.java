@@ -1,7 +1,14 @@
 package com.bilgeadam.example.entity;
 
-public class User {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "spring_user")
+public class User extends BaseEntity{
+
+    @Column(name = "user_name")
     private String userName;
 
     public String getUserName() {
